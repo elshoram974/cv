@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            width: 100%;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: #f4f4f4;
+            width: 90%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .paragraph-div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .inside-div {
+            padding: 0;
+            margin: 0;
+            max-width: 700px;
+            align-self: center;
+            align-items: start;
+            justify-content: start;
+            justify-items: flex-start;
+        }
+        .wrapper-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 700px) {
+            .paragraph-div {
+                flex-direction: row;
+                align-items: start;
+            }
+            .wrapper-footer {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            footer {
+                align-items: normal;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="paragraph-div">
+            <h2>Projects</h2>
+            <div>
+                <div class="inside-div">
+                    <p>
+                        <br>
+                        <h3>Sharikna App</h3>
+                        Sharikna is an innovative mobile application designed
+                        for efficient data sharing and organization. It offers a
+                        user-friendly platform that simplifies data retrieval,
+                        catering to the diverse needs of both individuals and
+                        businesses (Android and Web).
+                        <h4>Key Features:</h4>
+                        <b>Data Sharing: </b>Seamlessly share and organize data
+                        in an intuitive and user-friendly manner.
+                        <br>
+                        <b>Efficient Retrieval: </b>Facilitates easy retrieval
+                        of stored data, enhancing productivity and
+                        accessibility.
+                        <br>
+                        <b>Group Chat: </b>Enables users to engage in group
+                        chats, fostering collaboration and communication.
+                        <br>
+                        <b>Business Integration: </b>Tailored to meet the needs
+                        of businesses, providing tools for effective data
+                        management and communication.
+                        <br>
+                        <b>User-Centric Design: </b>Designed with the needs of
+                        both normal users and students in mind, ensuring a
+                        seamless experience for all.
+                        <h4>Technological Approach:</h4>
+                        <b>Advanced State Management: </b>Utilizes Cubit and
+                        BLoC state management for robust and scalable data
+                        handling.
+                        <br>
+                        <b>Advanced Routing: </b> Implements GoRouter for
+                        efficient navigation and routing within the application.
+                        <b>Clean Code Architecture: </b> Adheres to clean code
+                        architecture principles for maintainable and scalable
+                        codebase, ensuring long-term sustainability and
+                        flexibility.
+                        <br>
+                        Sharikna empowers users to streamline data sharing and
+                        organization, offering a comprehensive solution that
+                        meets the demands of modern-day communication and
+                        collaboration.
+                    </p>
+                </div>
+                <div class="inside-div">
+                    <p>
+                        <br>
+                        <h3>GPA PRO</h3>
+                        GPA PRO (MRE GPA) is an innovative mobile application
+                        that simplifies the process of calculating semester GPA
+                        or predicting it based on subject grades. The app
+                        utilizes GetX state management and the MVC design
+                        pattern to provide a seamless user experience (Android
+                        and Desktop).
+                        <h4>Key Features:</h4>
+                        <b>GPA Calculation: </b>Easily calculate or estimate
+                        your GPA using the app's grade predictions.
+                        <br>
+                        <b>Deep Linking: </b>Seamlessly integrate with other
+                        apps or platforms through deep linking, enhancing
+                        accessibility and user experience.
+                        <h4>Technological Approach:</h4>
+                        <b>State Management: </b>GPA PRO relies on GetX
+                        state management to ensure smooth data flow and
+                        efficient performance.
+                        <br>
+                        <b>MVC Design Pattern: </b>It follows the
+                        Model-View-Controller (MVC) design pattern, providing
+                        strong code organization and excellent maintainability.
+                        <br>
+                        With GPA PRO, tracking academic performance becomes
+                        easier than ever, allowing users to focus more on their
+                        studies and educational goals.
+                    </p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="paragraph-div">
+            <h2>Education</h2>
+            <div>
+                <div class="inside-div">
+                    <p>
+                        <br>
+                        <h3>Bachelor's Degree in THIET</h3>
+                        I get the Bachelor's Degree in Tanta higher
+                        institute of engineering and technology 2024
+                    </p>
+                </div>
+                <div class="inside-div">
+                    <p>
+                        <br>
+                        <h3>Flutter</h3>
+                        I have learned to develop applications using Flutter,
+                        mastering the Dart language and understanding the widget
+                        structure. I learned state management with <b>Provider,
+                            GetX</b> and
+                        <b>Bloc</b>, and <b>integrated RESTful APIs</b>. I
+                        gained
+                        experience
+                        using
+                        <b>Firebase</b> for authentication, real-time databases,
+                        and
+                        cloud
+                        functions, as well as using <b>SQLite , Hive</b> and
+                        <b>Shared
+                            Preferences</b>
+                        for local storage.
+                        <br>
+                        I learned make code with design pattern with <b>MVC,
+                            MVVM</b> and
+                        <b>Clean code architecture</b>.
+                        <br>
+                        I mastered designing <b>responsive UIs</b> that work on
+                        various
+                        devices and screens, testing and debugging applications
+                        with
+                        unit tests, widget tests, and integration tests. I used
+                        Flutter tools to optimize performance and learned how to
+                        deploy applications to Google Play. Additionally, I
+                        created packages and plugins to
+                        extend Flutter's functionality.
+                    </p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="paragraph-div">
+            <h2>Skills & Expertise</h2>
+            <div>
+                <div class="inside-div">
+                    <br>
+                    <ul>
+                        <li>
+                            <b>Programming Languages: </b>Dart, JavaScript,
+                            HTML/CSS, SQL, php, c++.
+                        </li>
+                        <li><b>Frameworks & Libraries: </b>Flutter.</li>
+                        <li>
+                            <b>State Management: </b>Getx, Provider, Bloc,
+                            Riverpod.
+                        </li>
+                        <li>
+                            <b>Design patterns: </b>MVC, MVVM, Clean code
+                            architecture.
+                        </li>
+                        <li>
+                            <b>Backend Technologies: </b>Firebase (Firestore,
+                            Authentication, Cloud Functions), RESTful APIs.
+                        </li>
+                        <li>
+                            <b>Database Management: </b> Firebase Realtime
+                            Database, SQLite, MySQL.
+                        </li>
+                        <li>
+                            <b>Development: </b> Android Development, Web
+                            Development, desktop Development.
+                        </li>
+                        <li>
+                            <b>UI/UX Design: </b>Responsive Design, Material
+                            Design, Custom Animations.
+                        </li>
+                        <li>
+                            <b>Tools & Platforms: </b>Git & GitHub, Google Cloud
+                            Platform, Visual Studio Code, Android Studio.
+                        </li>
+                        <li>
+                            <b>Additional Skills: </b>Performance Optimization,
+                            Package and Plugin Development, Code Review, Agile
+                            Methodologies.
+                        </li>
+                        <li>
+                            <b>Soft Skills: </b>Problem-Solving, Analytical
+                            Thinking, Attention to Detail, Time Management,
+                            Communication, Team Collaboration, Adaptability,
+                            Creativity.
+                        </li>
+                        <li>
+                            <b>Languages: </b>English (Fluent), Arabic (Native).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <hr>
+            <div class="wrapper-footer">
+                <div>
+                    <h2>Phone</h2>
+                    <p><a href="tel:+201553668845">(+20) 155-3366-8845</a></p>
+                </div>
+                <div>
+                    <h2>Email</h2>
+                    <p><a
+                            href="mailto:riyadm2001@gmail.com">riyadm2001@gmail.com</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

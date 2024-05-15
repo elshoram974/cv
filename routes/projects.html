@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+        }
+
+
+        hr {
+            margin-top: 20px;
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            width: 100%;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: #f4f4f4;
+            width: 90%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .wrapper-footer {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            footer {
+                align-items: normal;
+            }
+        }
+
+        @media (max-width: 300px) {
+            .buttons {
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="wrapper-body">
+            <center>
+                <img src="../assets/me.png" alt="Profile Picture"
+                    class="profile-pic">
+            </center>
+            <div class="container">
+                <center>
+                    <h1>Hello</h1>
+                </center>
+                <h2>A Bit About Me</h2>
+                <p>I am a highly motivated and skilled Flutter developer with a
+                    passion for creating beautiful and functional mobile
+                    applications.</p>
+                <div class="buttons">
+                    <a href="#" class="button resume">Resume</a>
+                    <a href="#" class="button projects">Projects</a>
+                    <a href="#" class="button contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <div class="wrapper-footer">
+                <div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+201553668845">(+20) 155-3366-8845</a></p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p><a
+                            href="mailto:riyadm2001@gmail.com">riyadm2001@gmail.com</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
