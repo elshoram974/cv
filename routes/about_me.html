@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>about me</title>
+        <title>About Me</title>
         <style>
         body {
             display: flex;
@@ -26,8 +26,7 @@
         }
 
         .profile-pic {
-            width: 200px;
-            height: 200px;
+            width: 50%;
             border-radius: 50%;
             object-fit: cover;
             margin-top: 20px;
@@ -110,20 +109,34 @@
             align-items: center;
         }
 
+        .social-media {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            text-decoration: none;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
         @media (min-width: 768px) {
             .profile-pic {
                 width: 400px;
                 height: 400px;
+                margin-top: 0;
+                margin-right: 20px;
+                align-self: self-end;
             }
 
             .wrapper-body {
                 flex-direction: row;
                 align-items: flex-start;
-            }
-
-            .profile-pic {
-                margin-top: 0;
-                margin-right: 20px;
             }
 
             .wrapper-footer {
@@ -147,22 +160,47 @@
             }
         }
     </style>
+        <script>
+        function calculateAge(birthDate) {
+            const today = new Date();
+            const birth = new Date(birthDate);
+            let age = today.getFullYear() - birth.getFullYear();
+            const monthDifference = today.getMonth() - birth.getMonth();
+            if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+                age--;
+            }
+            return age;
+        }
+        window.onload = function() {
+            const birthDate = '2001-02-03';
+            const age = calculateAge(birthDate);
+            document.getElementById('age').textContent = age;
+        };
+    </script>
     </head>
 
     <body>
         <div class="wrapper-body">
-            <center>
-                <img src="../assets/me.png" alt="Profile Picture"
-                    class="profile-pic">
-            </center>
+            <img src="../assets/me.png" alt="Profile Picture"
+                class="profile-pic">
             <div class="container">
                 <center>
                     <h1>Hello</h1>
                 </center>
+                <p><strong>Name:</strong> Mohammed Riyad El Shora</p>
+                <p>
+                    <strong>Date of Birth:</strong> February 3, 2001
+                    (<span id="age"></span> years old)
+                </p>
+                <p>
+                    <strong>Address:</strong> Kafr Seliem, Tanta, Gharbia, Egypt
+                </p>
                 <h2>A Bit About Me</h2>
-                <p>I am a highly motivated and skilled Flutter developer with a
+                <p>
+                    I am a highly motivated and skilled Flutter developer with a
                     passion for creating beautiful and functional mobile
-                    applications.</p>
+                    applications.
+                </p>
                 <div class="buttons">
                     <a href="resume.html" class="button resume">Resume</a>
                     <a href="projects.html" class="button projects">Projects</a>
@@ -181,6 +219,23 @@
                     <h3>Email</h3>
                     <p><a
                             href="mailto:riyadm2001@gmail.com">riyadm2001@gmail.com</a></p>
+                </div>
+                <div>
+                    <h3>Follow Me</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/mohammed.alshora.1"
+                            target="_blank">
+                            <img src="../assets/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.twitter.com/mohammedriyad44"
+                            target="_blank">
+                            <img src="../assets/x.jpg" alt="Twitter">
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammedelshora"
+                            target="_blank">
+                            <img src="../assets/LinkedIn.png" alt="LinkedIn">
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
